@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	paddinf: 0;
+	box-sizing: border-box;
+}
+body{
+ 	background-image: url('bg.png');
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+}
+body, ul{
+	  margin: 0;
+  	  padding: 0;
+    	  list-style: none;
+}
+.header{
+	width: 100%;
+	heigth: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+	background-size: cover;
+	background-position: center;
+	padding: 10px 8%
+	position: relative;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+.logo{
+	width: 150px;
+	cursor: pointer;
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    margin-right: 20px;
+}
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+.header-content{
+	position: absolute;
+	top:40%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	text-align:center;
+	margin-top: 100px;
+}
+.email-signup{
+	backgroung:#fff;
+	border-radius: 4px;
+	display:flex;
+	align-items: center;
+	margin-top: 30px:
+	overflow:hidden;
+}
+.email-signup input{
+	flex: 1;
+	border: 0;
+	outline: 0;
+	margin-left: 20px;
+	padding: 16px 30px;
+}
+.email-signup button{
+	background: #800080;
+	border: 0;
+	outline: 0;
+	color:#fff;
+	font-size: 16px;
+	cursor: pointer;
+	padding: 15px 30px;	
+}
+
+.footer {
+    background-color: #800080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top:660px;
+    margin-bottom:10px;
+}
+.contact-info {
+    background-color: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+
+  @media (max-width: 768px) {
+            /* Adjust the styles for smaller screens */
+	    body{
+ 		background-image: url('bgm.jpg');
+	    }
+            .header {
+                text-align: center;
+            }
+	    
+            .menu {
+                display: none;
+            }
+            .header-content h1 {
+                font-size: 24px;
+            }
+        }
